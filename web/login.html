@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+        />
+        <meta
+            name="description"
+            content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+        />
+        <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+        <meta name="author" content="PPType" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Moin! Digital Visitenkarte</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/register.css" />
+        <link rel="stylesheet" href="./assets/vendor/toastr/toastr.min.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/vendor/semantic/semantic.min.css"
+            type="text/css"
+        />
+        <!-- FAVICON -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png"
+        />
+    </head>
+
+    <body id="root">
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                <h2 class="ui center aligned header">
+                    <img
+                        class="image"
+                        src="./assets/favicon/android-chrome-512x512.png"
+                    />
+                    Jetzt einloggen
+                </h2>
+                <form class="ui large form">
+                    <div class="ui segment pillar">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input
+                                    class="pillar"
+                                    name="username"
+                                    placeholder="Username eingeben..."
+                                    type="text"
+                                    id="username"
+                                />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input
+                                    class="pillar"
+                                    name="password"
+                                    placeholder="Passwort eingeben..."
+                                    type="password"
+                                    id="password"
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="ui fluid large yellow submit button pillar"
+                            onclick="login()"
+                            id="loginButton"
+                        >
+                            Einloggen
+                        </div>
+                    </div>
+                    <div class="ui error message"></div>
+                </form>
+                <div class="ui message pillar">
+                    Neu hier?<a class="moinLink" href="register.html">
+                        Jetzt registrieren</a
+                    >
+                    oder zurück zur
+                    <a href="index.html" class="moinLink">Startseite</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/vendor/jquery/jquery-3.6.4.min.js"></script>
+    <script src="./assets/vendor/toastr/toastr.min.js"></script>
+    <script src="assets/js/login.js"></script>
+</html>

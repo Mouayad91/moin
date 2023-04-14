@@ -1,0 +1,41 @@
+body {
+    background-color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+}
+
+body>.ui.grid {
+    height: 100%;
+}
+
+.column {
+    max-width: 450px;
+}
+
+h2 {
+    color: white !important;
+}
+
+.button {
+    color: black !important;
+}
+
+input {
+    border: 2px solid black !important;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black!important;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black!important;
+}
+
+.pillar {
+    border-radius: 13px!important;
+}

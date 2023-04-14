@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./assets/js/is-authorized.js"></script>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Moin! Digital Visitenkarte</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/edit-profile.css" />
+    <link rel="stylesheet" href="./assets/vendor/toastr/toastr.min.css">
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/semantic/semantic.min.css"
+      type="text/css"
+    />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+  </head>
+
+  <body id="root">
+    <div class="ui inverted vertical center aligned segment">
+      <nav class="ui container">
+        <a href="/">
+          <h1 class="ui header" style="color: white">Moin! 👋</h1>
+        </a>
+        <div class="ui borderless inverted compact menu">
+          <a class="item" href="./code.html">
+            <i class="qrcode icon"></i> Mein Code</a
+          >
+          <a class="item" href="./edit-profile.html"
+            ><i class="user outline icon"></i> Mein Profil</a
+          >
+        </div>
+      </nav>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="ui content container">
+        <div class="ui middle aligned center aligned grid">
+          <div class="column">
+            <div class="ui large form">
+              <div class="ui segment pillar" id="profileForm">
+                <div class="field">
+                  <h2 class="ui center aligned icon header">
+                    <img
+                      class="ui center aligned circular image"
+                      src="https://semantic-ui.com/images/avatar/small/jenny.jpg"
+                      id="profilePicture"
+                    />
+                  </h2>
+                  <button class="ui basic button pillar" onclick="updatePP()">
+                    <i class="redo icon"></i> Bild ändern
+                  </button>
+                  <a class="ui basic button pillar" id="viewProfileButton">
+                    <i class="eye icon"></i> Profil schauen
+                  </a>
+                </div>
+                <div class="field">
+                  <label>Neuen Platform hinzufügen</label>
+                  <div class="ui fluid selection dropdown pillar dd">
+                    <input type="hidden" id="platform" />
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Wähle platform</div>
+                    <div class="menu" id="dropdownMenu">
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Vorname</label>
+                  <div class="ui left icon input">
+                    <i class="user outline icon"></i>
+                    <input
+                      class="pillar"
+                      placeholder="Vorname eingeben..."
+                      type="text"
+                      id="firstname"
+                      onblur="update()"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Nachname</label>
+                  <div class="ui left icon input">
+                    <i class="user outline icon"></i>
+                    <input
+                      class="pillar"
+                      placeholder="Nachname eingeben..."
+                      type="text"
+                      id="lastname"
+                      onblur="update()"
+                    />
+                  </div>
+                </div>
+                <div class="field">
+                  <label>Bio</label>
+                  <div class="ui left icon input">
+                    <i class="user outline icon"></i>
+                    <input
+                      class="pillar"
+                      placeholder="Bio eingeben..."
+                      type="text",
+                      id="bio"
+                      onblur="update()"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="ui error message"></div>
+            </div>
+            <div class="ui message pillar">
+              Keine Lust mehr?
+              <a class="moinLink" onclick="logOut();">Ausloggen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/vendor/jquery/jquery-3.6.4.min.js"></script>
+  <script src="./assets/vendor/semantic/semantic.min.js"></script>
+  <script src="./assets/vendor/toastr/toastr.min.js"></script>
+  <script src="./assets/js/platforms.js"></script>
+  <script src="./assets/js/edit-profile.js"></script>
+</html>

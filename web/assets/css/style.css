@@ -1,0 +1,9 @@
+.pillar {
+    border-radius: 18px !important;
+}
+
+.moinLink {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
