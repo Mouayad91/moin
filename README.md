@@ -3,9 +3,9 @@ Moin ist eine digitale Visitenkarten-App, die Ihnen hilft, das netzwerken mit an
 
 ### Erstellt von:
 ```
-Mouayad Haji Omar
+Mouayad
 
-Zubeir Mohamed
+Zubeir
 ```
 
 Um das Projekt zu testen können sie die [Live-Version](https://moin-iota.vercel.app/) benutzen
